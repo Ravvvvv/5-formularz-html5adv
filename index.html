@@ -11,34 +11,40 @@
 <body>
 
     <form action="wstaw strone tutaj" method="post">
-        <h1>Informacje o kliencie</h1>
-        <label for="name">Imie:</label>
-        <input type="text" name="name" id="name" placeholder="podaj imie" required maxlength="50" autofocus><br>
-
-        <label for="phone">Telefon:</label>
-        <input type="tel" name="phone" id="phone" placeholder="(1-234-567-8910)" required maxlength="50"
-            pattern="[0-9]"><br>
+        <fieldset>
 
 
-        <Label for="email">E-mail:</Label>
-        <Input type="email" name="email" id="emial" placeholder="podaj e-mail" autofocus required>
-
-        <h2>Ksiazki</h2>
-        <label for=""></label>
-        <select name="ksiazka" id="ksiazka">ksiazka
-            <option value="ksiazka 1">ksiazka 1</option>
-            <option value="ksiazka 2">ksiazka 2</option>
-            <option value="ksiazka 3">ksiazka 3 </option>
-            <option value="ksiazka 4">ksiazka 4</option>
-            <option value="ksiazka 5">ksiazka 5</option>
-        </select>
 
 
-        <label for="number"> ilość (maks 5)</label>
-        <input type="number" quantity min="1" max="5"><br>
+            <h1>Informacje o kliencie</h1>
+            <label for="name">Imie:</label>
+            <input type="text" name="name" id="name" placeholder="podaj imie" required maxlength="50" autofocus><br>
 
-        <button type="submit" value="Wyślij"> Wyślij</button>
+            <label for="phone">Telefon:</label>
+            <input type="number" min="1" max="5" name="phone" id="phone" placeholder="(1-234-567-8910)" required
+                maxlength="50" pattern="[0-9]"><br>
 
+
+            <Label for="email">E-mail:</Label>
+            <Input type="email" name="email" id="email" placeholder="podaj e-mail" required>
+
+            <h2>Ksiazki</h2>
+
+            <select>
+                <option value="ksiazka 1">ksiazka 1</option>
+                <option value="ksiazka 2">ksiazka 2</option>
+                <option value="ksiazka 3">ksiazka 3 </option>
+                <option value="ksiazka 4">ksiazka 4</option>
+                <option value="ksiazka 5">ksiazka 5</option>
+            </select>
+
+
+            <label for="number"> ilość (maks 5)</label>
+            <input type="quantity " quantity min="1" max="5"><br>
+            <form action="wstaw strone tutaj" method="post" autocomplete="on">
+            <button type="submit" value="Wyślij"> Wyślij</button>
+
+        </fieldset>
 
 
 
